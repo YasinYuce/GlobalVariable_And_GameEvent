@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b6cf4cf3b3eb44d418326c87f822912f, type: 3}
+  m_Name: MoneyManager
+  m_EditorClassIdentifier: 
+  Money:
+    UseConstant: 0
+    ConstantValue: 0
+    Variable: {fileID: 11400000, guid: 78ef68ce217f1d84cb40ab290a7a8a60, type: 2}
+  onMoneyChange: {fileID: 11400000, guid: ec27c8d84438ac946b2814d3b389c560, type: 2}
+  onMoneyNotEnought: {fileID: 11400000, guid: 4173ecedb7e3ac74bace5e6f9aa6d5d5, type: 2}
