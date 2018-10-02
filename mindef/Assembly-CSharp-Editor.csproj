@@ -55,11 +55,11 @@
      <Compile Include="Assets\Scripts\Utilities\GameEvent\Editor\GameEventCustomInspector.cs" />
      <Compile Include="Assets\Scripts\Utilities\ScriptableObjects\TowerInfo\Editor\TowerInfoCustomInspector.cs" />
      <Compile Include="Assets\Scripts\Utilities\Vector3Reference\Editor\Vector3ReferenceEditor.cs" />
- <Reference Include="Unity.PackageManagerUI.Editor">
- <HintPath>C:/Users/Dwbn.Eham/Desktop/ModularWork/ModularWork/mindef/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
- </Reference>
  <Reference Include="UnityEditor.StandardEvents">
  <HintPath>C:/Users/Dwbn.Eham/Desktop/ModularWork/ModularWork/mindef/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
+ </Reference>
+ <Reference Include="Unity.PackageManagerUI.Editor">
+ <HintPath>C:/Users/Dwbn.Eham/Desktop/ModularWork/ModularWork/mindef/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.AIModule">
  <HintPath>C:/Users/Dwbn.Eham/Desktop/Programs/Unity Collection/Unity 2018.1.0f2/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
