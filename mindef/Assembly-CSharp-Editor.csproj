@@ -51,10 +51,9 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\Scripts\Utilities\FloatReference\Editor\FloatReferenceEditor.cs" />
      <Compile Include="Assets\Scripts\Utilities\GameEvent\Editor\GameEventCustomInspector.cs" />
      <Compile Include="Assets\Scripts\Utilities\ScriptableObjects\TowerInfo\Editor\TowerInfoCustomInspector.cs" />
-     <Compile Include="Assets\Scripts\Utilities\Vector3Reference\Editor\Vector3ReferenceEditor.cs" />
+     <Compile Include="Assets\Scripts\Utilities\VariableReference\Editor\VariableReferencePropertyDrawer.cs" />
  <Reference Include="UnityEditor.StandardEvents">
  <HintPath>C:/Users/Dwbn.Eham/Desktop/ModularWork/ModularWork/mindef/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
  </Reference>

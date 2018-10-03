@@ -370,9 +370,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Speed:
-    UseConstant: 0
-    ConstantValue: {x: 0, y: 0, z: 0}
-    Variable: {fileID: 11400000, guid: 27b945ce6a4a680438c66b02564fbd51, type: 2}
+    useReference: 0
+    constantValue: {x: 0, y: 0, z: 5}
+    variable: {fileID: 0}
 --- !u!114 &114734033902571978
 MonoBehaviour:
   m_ObjectHideFlags: 1

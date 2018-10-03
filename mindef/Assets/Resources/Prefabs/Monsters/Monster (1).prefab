@@ -262,9 +262,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Speed:
-    UseConstant: 0
-    ConstantValue: {x: 0, y: 0, z: 0}
-    Variable: {fileID: 11400000, guid: ba82332e2b1a1d44295b8b76a18e0460, type: 2}
+    useReference: 0
+    constantValue: {x: 0.0035, y: 0.0035, z: 0.0035}
+    variable: {fileID: 0}
   changeIteration: 45
 --- !u!114 &114683596763916330
 MonoBehaviour:
@@ -278,9 +278,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Speed:
-    UseConstant: 0
-    ConstantValue: {x: 0, y: 0, z: 0}
-    Variable: {fileID: 11400000, guid: 682440df7ecdf3c419f0a83ffe7fd1fd, type: 2}
+    useReference: 0
+    constantValue: {x: 0, y: 0, z: -5}
+    variable: {fileID: 0}
 --- !u!114 &114957878846418458
 MonoBehaviour:
   m_ObjectHideFlags: 1

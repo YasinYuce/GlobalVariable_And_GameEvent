@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Name: MoneyManager
   m_EditorClassIdentifier: 
   Money:
-    UseConstant: 0
-    ConstantValue: 0
-    Variable: {fileID: 11400000, guid: 78ef68ce217f1d84cb40ab290a7a8a60, type: 2}
+    useReference: 1
+    constantValue: 0
+    variable: {fileID: 11400000, guid: 78ef68ce217f1d84cb40ab290a7a8a60, type: 2}
   onMoneyChange: {fileID: 11400000, guid: ec27c8d84438ac946b2814d3b389c560, type: 2}
   onMoneyNotEnought: {fileID: 11400000, guid: 4173ecedb7e3ac74bace5e6f9aa6d5d5, type: 2}

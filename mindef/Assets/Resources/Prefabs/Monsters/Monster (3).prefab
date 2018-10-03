@@ -233,9 +233,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Speed:
-    UseConstant: 0
-    ConstantValue: {x: 0, y: 0, z: 0}
-    Variable: {fileID: 11400000, guid: 72a2636e7e99faf4297b48c32940d8e3, type: 2}
+    useReference: 0
+    constantValue: {x: 0, y: 0, z: 1}
+    variable: {fileID: 0}
   changeIteration: 40
 --- !u!114 &114858837210451676
 MonoBehaviour:

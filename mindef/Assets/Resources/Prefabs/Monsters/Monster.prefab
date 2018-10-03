@@ -274,9 +274,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Speed:
-    UseConstant: 0
-    ConstantValue: {x: 0, y: 0, z: 0}
-    Variable: {fileID: 11400000, guid: d324a9761128d3f4da80a3572a1e8a35, type: 2}
+    useReference: 0
+    constantValue: {x: 0, y: 0, z: 4}
+    variable: {fileID: 0}
 --- !u!212 &212411515307841024
 SpriteRenderer:
   m_ObjectHideFlags: 1
