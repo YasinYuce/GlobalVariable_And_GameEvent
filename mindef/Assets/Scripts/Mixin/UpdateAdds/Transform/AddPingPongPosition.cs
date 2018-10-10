@@ -22,7 +22,7 @@ public class AddPingPongPosition : AddTransform
 	}
 
 	void plusTheValue(){
-		cachedValue += Speed.Value;
+		cachedValue += speed;
 		myTransform.localPosition = cachedValue;
 		count--;
 		if (count == 0)
@@ -30,7 +30,7 @@ public class AddPingPongPosition : AddTransform
 	}
 
 	void minusTheValue(){
-		cachedValue -= Speed.Value;
+		cachedValue -= speed;
 		myTransform.localPosition = cachedValue;
 		count++;
 		if (count == changeIteration)

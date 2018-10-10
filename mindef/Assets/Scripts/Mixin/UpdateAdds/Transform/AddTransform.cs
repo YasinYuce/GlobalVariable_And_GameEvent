@@ -2,7 +2,8 @@
 
 public abstract class AddTransform : BaseAdd 
 {
-	public Vector3Reference Speed;
+	[SerializeField]
+	protected Vector3 speed;
 
 	protected Vector3 cachedValue;
 	protected Transform myTransform;
@@ -12,14 +13,11 @@ public abstract class AddTransform : BaseAdd
 	}
 
 	public virtual void OnEnable(){
-		UpdateAdds updator = GetComponentInParent<UpdateAdds> ();
-		if(updator != null)
-			updator.Add (this);
+		UpdateAdds.Instance.Add (this);
 	}
 
 	public virtual void OnDisable(){
-		UpdateAdds updator = GetComponentInParent<UpdateAdds> ();
-		if (updator != null)
-			updator.Remove (this);
+		if(UpdateAdds.InstanceExist)
+			UpdateAdds.Instance.Remove (this);
 	}
 }

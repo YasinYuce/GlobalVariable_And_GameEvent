@@ -1,9 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections.Generic;
 
-[CreateAssetMenu(fileName = "NewPath", menuName = "Utilities/Path")]
-public class Path : ScriptableObject 
-{
-	public List<Vector3> Values;
-	
-}
+[CreateAssetMenu(fileName = "Vector3Array", menuName = "ObjectContainers/Vector3Array")]
+public class Vector3Array : ObjectArray<Vector3> 
+{ }

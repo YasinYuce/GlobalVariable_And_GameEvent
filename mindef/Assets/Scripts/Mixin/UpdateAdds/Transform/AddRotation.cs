@@ -9,7 +9,7 @@ public class AddRotation : AddTransform
 
 	public override void Action ()
 	{
-		cachedValue += Speed.Value;
+		cachedValue += speed;
 		myTransform.rotation = Quaternion.Euler (cachedValue);
 	}
 }

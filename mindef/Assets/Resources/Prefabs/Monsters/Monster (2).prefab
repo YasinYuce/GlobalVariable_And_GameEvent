@@ -68,7 +68,6 @@ GameObject:
   m_Component:
   - component: {fileID: 4420419860123800}
   - component: {fileID: 58072522196381592}
-  - component: {fileID: 114926721325325560}
   - component: {fileID: 114284890241802758}
   - component: {fileID: 114734033902571978}
   m_Layer: 10
@@ -210,7 +209,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1389281894072530}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.4418, y: 0, z: 0}
+  m_LocalPosition: {x: 1.45, y: 1.65, z: 0}
   m_LocalScale: {x: 0.52192825, y: 0.52192825, z: 1.1224264}
   m_Children:
   - {fileID: 4289261834171172}
@@ -369,10 +368,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 431c5a6e5e368584abce954985f4f3cb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Speed:
-    useReference: 0
-    constantValue: {x: 0, y: 0, z: 5}
-    variable: {fileID: 0}
+  speed: {x: 0, y: 0, z: 5}
 --- !u!114 &114734033902571978
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -386,17 +382,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   monstersRefs: {fileID: 11400000, guid: d3226fb4d1a4fce418d770b71e4236d2, type: 2}
   info: {fileID: 11400000, guid: 3eb8f5a6dc2696c48ab19a8808b56137, type: 2}
---- !u!114 &114926721325325560
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1389281894072530}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 59d3120a3b35266498405d33bf6fd7dc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!212 &212025830822691070
 SpriteRenderer:
   m_ObjectHideFlags: 1

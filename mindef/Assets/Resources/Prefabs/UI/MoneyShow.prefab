@@ -21,7 +21,7 @@ GameObject:
   - component: {fileID: 224345811420821502}
   - component: {fileID: 222593545625375328}
   - component: {fileID: 114762589694007156}
-  - component: {fileID: 114803063078668700}
+  - component: {fileID: 114236812755233888}
   - component: {fileID: 114432734150727574}
   m_Layer: 5
   m_Name: MoneyShow
@@ -47,6 +47,22 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &114236812755233888
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1336489109167914}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c57ac8d5cd9aeb64b8ffba5ec95642b6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  value:
+    useReference: 1
+    constantValue: 0
+    variable: {fileID: 11400000, guid: 78ef68ce217f1d84cb40ab290a7a8a60, type: 2}
+  valueText: {fileID: 114762589694007156}
 --- !u!114 &114432734150727574
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -62,8 +78,8 @@ MonoBehaviour:
   Response:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 114803063078668700}
-        m_MethodName: Show
+      - m_Target: {fileID: 0}
+        m_MethodName: Response
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -141,22 +157,6 @@ MonoBehaviour:
     m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: 0
---- !u!114 &114803063078668700
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1336489109167914}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d3ba9c7c54c213d489f1445e8d0977f0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  value:
-    UseConstant: 0
-    ConstantValue: 0
-    Variable: {fileID: 11400000, guid: 78ef68ce217f1d84cb40ab290a7a8a60, type: 2}
-  valueText: {fileID: 114762589694007156}
 --- !u!222 &222593545625375328
 CanvasRenderer:
   m_ObjectHideFlags: 1

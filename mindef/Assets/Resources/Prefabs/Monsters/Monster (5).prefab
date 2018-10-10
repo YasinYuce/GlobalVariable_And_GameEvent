@@ -52,7 +52,6 @@ GameObject:
   m_Component:
   - component: {fileID: 4792490134079180}
   - component: {fileID: 58575176847594676}
-  - component: {fileID: 114827326602137974}
   - component: {fileID: 114120898027344944}
   m_Layer: 10
   m_Name: Monster (5)
@@ -310,7 +309,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1216865109697984}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.64489, y: 0, z: 0}
+  m_LocalPosition: {x: 1.45, y: -2.85, z: 0}
   m_LocalScale: {x: 0.28621873, y: 0.28621873, z: 1.1224264}
   m_Children:
   - {fileID: 4594420205412610}
@@ -383,10 +382,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 871445770fb6c8448aafe5930e9cf590, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Speed:
-    useReference: 0
-    constantValue: {x: 0, y: 0.005, z: 0}
-    variable: {fileID: 0}
+  speed: {x: 0, y: 0.005, z: 0}
   changeIteration: 20
 --- !u!114 &114824156073869928
 MonoBehaviour:
@@ -399,22 +395,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 871445770fb6c8448aafe5930e9cf590, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Speed:
-    useReference: 0
-    constantValue: {x: 0, y: -0.005, z: 0}
-    variable: {fileID: 0}
+  speed: {x: 0, y: -0.005, z: 0}
   changeIteration: 20
---- !u!114 &114827326602137974
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1216865109697984}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 59d3120a3b35266498405d33bf6fd7dc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!212 &212004261382749432
 SpriteRenderer:
   m_ObjectHideFlags: 1

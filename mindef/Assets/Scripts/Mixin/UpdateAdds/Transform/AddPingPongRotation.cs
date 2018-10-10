@@ -16,7 +16,7 @@ public class AddPingPongRotation : AddRotation
 	}
 
 	void plusTheValue(){
-		cachedValue += Speed.Value;
+		cachedValue += speed;
 		myTransform.rotation = Quaternion.Euler (cachedValue);
 		count--;
 		if (count == 0)
@@ -24,7 +24,7 @@ public class AddPingPongRotation : AddRotation
 	}
 
 	void minusTheValue(){
-		cachedValue -= Speed.Value;
+		cachedValue -= speed;
 		myTransform.rotation = Quaternion.Euler (cachedValue);
 		count++;
 		if (count == changeIteration)

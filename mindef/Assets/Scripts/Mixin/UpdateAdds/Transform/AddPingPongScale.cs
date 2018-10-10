@@ -22,7 +22,7 @@ public class AddPingPongScale : AddTransform
 	}
 
 	void plusTheValue(){
-		cachedValue += Speed.Value;
+		cachedValue += speed;
 		myTransform.localScale = cachedValue;
 		count--;
 		if (count == 0)
@@ -30,7 +30,7 @@ public class AddPingPongScale : AddTransform
 	}
 
 	void minusTheValue(){
-		cachedValue -= Speed.Value;
+		cachedValue -= speed;
 		myTransform.localScale = cachedValue;
 		count++;
 		if (count == changeIteration)

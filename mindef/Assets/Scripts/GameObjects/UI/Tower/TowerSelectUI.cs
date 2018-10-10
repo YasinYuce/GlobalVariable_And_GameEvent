@@ -17,13 +17,13 @@ public class TowerSelectUI : MonoBehaviour
 
 	void createTowerInfoUIs(){
 		TowerInfoParent.sizeDelta = new Vector2 (TowerInfoParent.sizeDelta.x,
-			AvailableTowers.Array.Length * TowerInfoParent.GetComponentInParent<GridLayoutGroup> ().cellSize.y + (AvailableTowers.Array.Length - 1) *  TowerInfoParent.GetComponentInParent<GridLayoutGroup> ().spacing.y);
+			AvailableTowers.Values.Length * TowerInfoParent.GetComponentInParent<GridLayoutGroup> ().cellSize.y + (AvailableTowers.Values.Length - 1) *  TowerInfoParent.GetComponentInParent<GridLayoutGroup> ().spacing.y);
 
-		for (int i = 0; i < AvailableTowers.Array.Length; i++) {
+		for (int i = 0; i < AvailableTowers.Values.Length; i++) {
 			
 			TowerInfoUI t = Instantiate (TowerUIInfoPrefab, TowerInfoParent).GetComponent<TowerInfoUI> ();
 
-			Tower tower = AvailableTowers.Array [i].GetComponent<Tower> ();
+			Tower tower = AvailableTowers.Values [i].GetComponent<Tower> ();
 
 			setTowerInfoUI (t, tower);
 		}
