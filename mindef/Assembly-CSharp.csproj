@@ -52,14 +52,25 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\Scripts\ClassExtends\FloatExtend.cs" />
+     <Compile Include="Assets\Scripts\ClassExtends\TransformExtend.cs" />
+     <Compile Include="Assets\Scripts\GameObjects\Monsters\HasReward\MonsterHasReward.cs" />
      <Compile Include="Assets\Scripts\GameObjects\Monsters\Monster.cs" />
+     <Compile Include="Assets\Scripts\GameObjects\Monsters\MonsterDamagable\MonsterDamagable.cs" />
      <Compile Include="Assets\Scripts\GameObjects\Slot\Slot.cs" />
      <Compile Include="Assets\Scripts\GameObjects\Tower\Tower.cs" />
+     <Compile Include="Assets\Scripts\GameObjects\Tower\TowerClickResponse\TowerClickResponse.cs" />
+     <Compile Include="Assets\Scripts\GameObjects\Tower\TowerManageInRange\TowerManageInRange.cs" />
+     <Compile Include="Assets\Scripts\GameObjects\Tower\TowerShoot\FollowTarget.cs" />
+     <Compile Include="Assets\Scripts\GameObjects\Tower\TowerShoot\TowerShoot.cs" />
+     <Compile Include="Assets\Scripts\GameObjects\Tower\TowerTriggerResponse\TowerTriggerResponse.cs" />
      <Compile Include="Assets\Scripts\GameObjects\UI\FadeAwayUI\FadeAwayText.cs" />
      <Compile Include="Assets\Scripts\GameObjects\UI\MoneyChangeResponse\MoneyChangeResponse.cs" />
      <Compile Include="Assets\Scripts\GameObjects\UI\NotEnoughtMoneyResponse\NotEnoughtMoneyResponse.cs" />
      <Compile Include="Assets\Scripts\GameObjects\UI\Tower\TowerInfoUI.cs" />
      <Compile Include="Assets\Scripts\GameObjects\UI\Tower\TowerSelectUI.cs" />
+     <Compile Include="Assets\Scripts\Interfaces\IChaseTarget.cs" />
+     <Compile Include="Assets\Scripts\Interfaces\IDamagable.cs" />
+     <Compile Include="Assets\Scripts\Interfaces\IHasReward.cs" />
      <Compile Include="Assets\Scripts\Interfaces\IResponse.cs" />
      <Compile Include="Assets\Scripts\Managers\InputManagers\InputManager.cs" />
      <Compile Include="Assets\Scripts\Managers\InputManagers\TowerInputManager.cs" />

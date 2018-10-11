@@ -1,7 +1,6 @@
 ﻿using UnityEngine;
 
-public interface IResponse 
+public interface IResponse
 {
 	void Response ();
-	
 }

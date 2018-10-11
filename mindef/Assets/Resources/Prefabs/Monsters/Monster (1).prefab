@@ -22,6 +22,8 @@ GameObject:
   - component: {fileID: 58042151376411200}
   - component: {fileID: 114683596763916330}
   - component: {fileID: 114957878846418458}
+  - component: {fileID: 114585713329265036}
+  - component: {fileID: 114863739824736000}
   m_Layer: 10
   m_Name: Monster (1)
   m_TagString: Untagged
@@ -251,6 +253,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: {x: 0.0035, y: 0.0035, z: 0.0035}
   changeIteration: 45
+--- !u!114 &114585713329265036
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1370728081507554}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d2c9a7f7f7b2fc8488545faaabefbeeb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moneyManager: {fileID: 11400000, guid: c4f0e56e076a08949a4f3f99a9703deb, type: 2}
 --- !u!114 &114683596763916330
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -263,6 +277,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: {x: 0, y: 0, z: 5}
+--- !u!114 &114863739824736000
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1370728081507554}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cf5853d537a0f6a4bbda2d9e25d79711, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &114957878846418458
 MonoBehaviour:
   m_ObjectHideFlags: 1

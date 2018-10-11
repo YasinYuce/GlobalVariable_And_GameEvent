@@ -6,7 +6,7 @@ public class TowerInfoUI : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndD
 {
 	#region UI part variables
 	[SerializeField]
-	private Image towerImage = null;
+	private Image towerImage = null, selectedBackground = null;
 
 	[SerializeField]
 	private Text damageText = null, rangeText = null, speedText = null, priceText = null;
@@ -32,7 +32,7 @@ public class TowerInfoUI : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndD
 		speedText.text = _info.Speed.ToString ();
 		priceText.text = _info.Price.ToString ();
 	}
-                  #endregion
+    #endregion
 
 	#region IDrag implementations
 	bool isBuyable = false;
@@ -49,6 +49,7 @@ public class TowerInfoUI : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndD
 			siblingIndex = transform.GetSiblingIndex ();
 			parent = transform.parent;
 			transform.SetParent (transform.parent.parent.parent);
+			selectedBackground.enabled = true;
 		}
 	}
 
@@ -75,6 +76,7 @@ public class TowerInfoUI : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndD
 			GetComponentInParent<GridLayoutGroup> ().enabled = true;
 			isBuyable = false;
 			rayForSlot ();
+			selectedBackground.enabled = false;
 		}
 	}
 
@@ -95,7 +97,7 @@ public class TowerInfoUI : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndD
 	{
 		Tower t = Instantiate (myPrefab).GetComponent<Tower> ();
 		s.PlaceTower (t);
-		moneyManager.ChangeMoney (t.info.Price);
+		moneyManager.ChangeMoney (-t.Info.Price);
 	}
 	#endregion
 }

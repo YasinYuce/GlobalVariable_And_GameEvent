@@ -38,6 +38,8 @@ GameObject:
   - component: {fileID: 58306802388797682}
   - component: {fileID: 114621887816754980}
   - component: {fileID: 114093100730290498}
+  - component: {fileID: 114066462994630780}
+  - component: {fileID: 114740114489302598}
   m_Layer: 10
   m_Name: Monster (3)
   m_TagString: Untagged
@@ -207,6 +209,18 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 0.13833334
+--- !u!114 &114066462994630780
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1339107575271124}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d2c9a7f7f7b2fc8488545faaabefbeeb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moneyManager: {fileID: 11400000, guid: c4f0e56e076a08949a4f3f99a9703deb, type: 2}
 --- !u!114 &114093100730290498
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -233,6 +247,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: {x: 0, y: 0, z: 1}
   changeIteration: 40
+--- !u!114 &114740114489302598
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1339107575271124}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cf5853d537a0f6a4bbda2d9e25d79711, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!212 &212226490033281800
 SpriteRenderer:
   m_ObjectHideFlags: 1

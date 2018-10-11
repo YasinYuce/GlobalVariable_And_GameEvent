@@ -115,6 +115,8 @@ GameObject:
   - component: {fileID: 4223221787315382}
   - component: {fileID: 58428533633393364}
   - component: {fileID: 114629816254796592}
+  - component: {fileID: 114561006528389420}
+  - component: {fileID: 114004229121968218}
   m_Layer: 10
   m_Name: Monster (7)
   m_TagString: Untagged
@@ -802,6 +804,17 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 0.8645833
+--- !u!114 &114004229121968218
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1410682664267916}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cf5853d537a0f6a4bbda2d9e25d79711, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &114082247019771706
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -841,6 +854,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: {x: 0, y: 0, z: 1}
   changeIteration: 10
+--- !u!114 &114561006528389420
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1410682664267916}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d2c9a7f7f7b2fc8488545faaabefbeeb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moneyManager: {fileID: 11400000, guid: c4f0e56e076a08949a4f3f99a9703deb, type: 2}
 --- !u!114 &114629816254796592
 MonoBehaviour:
   m_ObjectHideFlags: 1

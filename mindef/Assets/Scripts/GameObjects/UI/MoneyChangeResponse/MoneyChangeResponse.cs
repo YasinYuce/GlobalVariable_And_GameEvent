@@ -14,8 +14,11 @@ public class MoneyChangeResponse : MonoBehaviour, IResponse
 		Response ();
 	}
 
+	#region IResponse implementation
+
 	public void Response(){
 		valueText.text = value.Value.ToString ();
 	}
-	
+
+	#endregion
 }

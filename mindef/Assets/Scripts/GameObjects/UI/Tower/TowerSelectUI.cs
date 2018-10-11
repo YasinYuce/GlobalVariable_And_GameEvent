@@ -30,7 +30,7 @@ public class TowerSelectUI : MonoBehaviour
 	}
 
 	void setTowerInfoUI(TowerInfoUI t, Tower tower){
-		t.Fill (tower.info);
+		t.Fill (tower.PrefabInfo);
 		t.myPrefab = tower.gameObject;
 	}
 }

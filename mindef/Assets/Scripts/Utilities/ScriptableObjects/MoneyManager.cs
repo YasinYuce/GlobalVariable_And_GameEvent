@@ -18,7 +18,7 @@ public class MoneyManager : ScriptableObject
 	}
 
 	public void ChangeMoney(float c){
-		Money.Value -= c;
+		Money.Value += c;
 		onMoneyChange.Raise ();
 	}
 }
