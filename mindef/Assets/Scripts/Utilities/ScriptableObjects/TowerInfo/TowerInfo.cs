@@ -10,10 +10,13 @@ public class TowerInfo : ScriptableObject
 	public float Speed = 1.5f;
 	public float Price = 20f;
 
+	public Damager Bullet;
+
 	public void FillInstance (TowerInfo instance){
 		instance.Damage = Damage;
 		instance.Range = Range;
 		instance.Speed = Speed;
 		instance.Price = Price;
+		instance.Bullet = Bullet;
 	}
 }

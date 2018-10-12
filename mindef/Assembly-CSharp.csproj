@@ -68,6 +68,7 @@
      <Compile Include="Assets\Scripts\GameObjects\UI\NotEnoughtMoneyResponse\NotEnoughtMoneyResponse.cs" />
      <Compile Include="Assets\Scripts\GameObjects\UI\Tower\TowerInfoUI.cs" />
      <Compile Include="Assets\Scripts\GameObjects\UI\Tower\TowerSelectUI.cs" />
+     <Compile Include="Assets\Scripts\Interfaces\Damager.cs" />
      <Compile Include="Assets\Scripts\Interfaces\IChaseTarget.cs" />
      <Compile Include="Assets\Scripts\Interfaces\IDamagable.cs" />
      <Compile Include="Assets\Scripts\Interfaces\IHasReward.cs" />
@@ -75,12 +76,12 @@
      <Compile Include="Assets\Scripts\Managers\InputManagers\InputManager.cs" />
      <Compile Include="Assets\Scripts\Managers\InputManagers\TowerInputManager.cs" />
      <Compile Include="Assets\Scripts\Mixin\BaseAdd.cs" />
+     <Compile Include="Assets\Scripts\Mixin\UpdatableAdds\Transform\AddPingPongPosition.cs" />
+     <Compile Include="Assets\Scripts\Mixin\UpdatableAdds\Transform\AddPingPongRotation.cs" />
+     <Compile Include="Assets\Scripts\Mixin\UpdatableAdds\Transform\AddPingPongScale.cs" />
+     <Compile Include="Assets\Scripts\Mixin\UpdatableAdds\Transform\AddRotation.cs" />
+     <Compile Include="Assets\Scripts\Mixin\UpdatableAdds\Transform\AddTransform.cs" />
      <Compile Include="Assets\Scripts\Mixin\UpdateAdds.cs" />
-     <Compile Include="Assets\Scripts\Mixin\UpdateAdds\Transform\AddPingPongPosition.cs" />
-     <Compile Include="Assets\Scripts\Mixin\UpdateAdds\Transform\AddPingPongRotation.cs" />
-     <Compile Include="Assets\Scripts\Mixin\UpdateAdds\Transform\AddPingPongScale.cs" />
-     <Compile Include="Assets\Scripts\Mixin\UpdateAdds\Transform\AddRotation.cs" />
-     <Compile Include="Assets\Scripts\Mixin\UpdateAdds\Transform\AddTransform.cs" />
      <Compile Include="Assets\Scripts\Utilities\GameEvent\GameEvent.cs" />
      <Compile Include="Assets\Scripts\Utilities\GameEvent\GameEventListener.cs" />
      <Compile Include="Assets\Scripts\Utilities\ObjectContainer\GameObjectArray.cs" />

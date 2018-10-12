@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-public class FollowTarget : MonoBehaviour, IChaseTarget
+public class FollowTarget : Damager, IChaseTarget
 {
 	private Transform target;
 
@@ -9,7 +9,8 @@ public class FollowTarget : MonoBehaviour, IChaseTarget
 
 	[SerializeField]
 	private float speed = 0f;
-	private float damage = 0;
+
+	#region IChaseTarget Implementation
 
 	public void Follow(float _damage, Transform _target){
 		damage = _damage;
@@ -17,19 +18,24 @@ public class FollowTarget : MonoBehaviour, IChaseTarget
 		gameObject.SetActive (true);
 	}
 
+	#endregion
+
 	void FixedUpdate(){
 		if (target == null) {
 			close ();
 			return;
 		}
-		Vector3 myPos = transform.position, targetPos = target.position;
+		moveToTarget ();
+	}
 
+	void moveToTarget ()
+	{
+		Vector3 myPos = transform.position, targetPos = target.position;
 		myPos = Vector3.MoveTowards (myPos, targetPos, speed);
 		transform.position = myPos;
-		if(lookAt)
+		if (lookAt)
 			transform.LookAt (target);
-
-		if (Vector3.Distance(myPos, targetPos) < 0.25f)
+		if (Vector3.Distance (myPos, targetPos) < 0.25f)
 			hitDamage ();
 	}
 

@@ -16,3 +16,4 @@ MonoBehaviour:
   Range: 3.2
   Speed: 1.5
   Price: 60
+  Bullet: {fileID: 114094620538793546, guid: 2849892b9ba9fe541ba104f6c1db9f26, type: 2}

@@ -91,8 +91,6 @@ public class TowerInfoUI : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndD
 		}
 	}
 
-
-
 	void createAndDropTower (Slot s)
 	{
 		Tower t = Instantiate (myPrefab).GetComponent<Tower> ();

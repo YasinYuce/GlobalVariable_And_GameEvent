@@ -5,10 +5,7 @@ using System.Collections;
 [RequireComponent(typeof(TowerManageInRange))]
 public class TowerShoot : MonoBehaviour 
 {
-	private Tower _tower;
-
-	[SerializeField]
-	private GameObject shootPrefab = null;
+	private Tower _tower = null;
 
 	[SerializeField]
 	private Transform shootPoint = null;
@@ -20,7 +17,7 @@ public class TowerShoot : MonoBehaviour
 	}
 
 	void Shoot(float _damage){
-		Instantiate (shootPrefab, shootPoint.position, shootPoint.rotation).GetComponent<IChaseTarget> ().Follow (_damage, target);
+		Instantiate (_tower.Info.Bullet, shootPoint.position, shootPoint.rotation).GetComponent<IChaseTarget> ().Follow (_damage, target);
 	}
 
 	Coroutine shootRoutine;
